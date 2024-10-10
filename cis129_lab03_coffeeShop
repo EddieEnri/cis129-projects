@@ -1,0 +1,18 @@
+print('***************************************')
+print('My Coffee and Muffin Shop')
+coffeesBought = int(input('Number of coffees bought?'))
+muffinsBought = int(input('Number of muffins bought?'))
+print('***************************************')
+print('\n\n***************************************')
+print('My Coffee and Muffin Shop Receipt')
+coffeePrice = 5
+muffinPrice = 4
+coffee_total_cost = coffeesBought * coffeePrice
+muffin_total_cost = muffinsBought * muffinPrice
+tax = (coffee_total_cost + muffin_total_cost) * .06
+print(coffeesBought,' coffees at $',coffeePrice,' each: $',coffee_total_cost)
+print(muffinsBought,' muffins at $',muffinPrice,' each: $',muffin_total_cost)
+print('6% tax: $',tax)
+print('----------')
+print('Total: $',coffee_total_cost + muffin_total_cost + tax)
+print('***************************************')
